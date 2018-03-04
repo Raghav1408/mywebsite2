@@ -1,0 +1,19 @@
+Not sure if people are still stuck:
+
+<html lang="en">
+<head>a
+    <meta charset="UTF-8">
+    <title>Music</title>
+</head>
+<body>
+
+<h3>My Albums</h3>
+    <ul>
+    {% for album in all_albums %}
+        <li>
+            <a href="{% url 'detail' album.id %}">{{ album.album_tittle }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+</body>
+</html>﻿
